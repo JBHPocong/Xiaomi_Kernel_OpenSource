@@ -36,9 +36,9 @@ jobs:
 
       - name: Clone AOSP Clang 10
         run: |
-          mkdir -p prebuilts/clang/host/linux-x86/clang-r383902b
-          aria2c -x 16 -s 16 -k 1M https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r383902b.tar.gz
-          tar -xzf clang-r383902b.tar.gz -C prebuilts/clang/host/linux-x86/clang-r383902b
+          mkdir -p prebuilts/clang/host/linux-x86/clang-r399163
+          aria2c -x 16 -s 16 -k 1M https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r399163.tar.gz
+          tar -xzf clang-r399163.tar.gz -C prebuilts/clang/host/linux-x86/clang-r399163
 
       # 4. Set environment variables
       - name: Export build vars
